@@ -2,152 +2,341 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Lianhua Chi</title>
+    <title>Research | Lianhua Chi</title>
+    <meta
+      name="description"
+      content="Research overview for Lianhua Chi, including graph stream learning, dynamic graph AI, and AI for autism."
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
   </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+  <body class="page-research">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-row">
           <a class="brand" href="index.html">Lianhua Chi</a>
-
-          <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="research.html">Research</a></li>
-            <li><a href="cv.pdf">C.V.</a></li>
-          </ul>
-
-
-          <div class="nav-collapse">
-          </div>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="research.html" aria-current="page">Research</a>
+            <a href="cv.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=5_J2eo8AAAAJ&hl=en">Google Scholar</a>
+          </nav>
         </div>
-      </div>
+      </header>
+
+      <main>
+        <section class="subpage-hero">
+          <div class="container narrow">
+            <p class="eyebrow">Research Programs</p>
+            <h1>Research that connects scalable graph learning with clinically meaningful AI.</h1>
+            <p class="lead">
+              My work sits at the intersection of machine learning, data mining, graph analytics, anomaly detection,
+              approximate computation, and healthcare AI. The unifying theme is to design models that remain useful when
+              data are dynamic, noisy, resource-constrained, and high stakes.
+            </p>
+          </div>
+        </section>
+
+        <section class="detail-section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Research Program 01</p>
+              <h2>Graph Stream Learning and Resource-Constrained Approximate AI</h2>
+            </div>
+            <div class="detail-grid">
+              <div class="detail-copy">
+                <p>
+                  This research program develops principled algorithms for learning from dynamic graph streams in a
+                  single pass and under bounded memory, computation, and latency. It builds on my longstanding work in
+                  hashing, graph mining, adaptive learning, and scalable representation design.
+                </p>
+                <p>
+                  The central idea is that real-time graph learning should not depend on storing full graph histories or
+                  retraining from scratch. Instead, we can design compact summaries and approximate representations that
+                  preserve the most useful structural and temporal signals for downstream learning.
+                </p>
+              </div>
+              <div class="detail-panel">
+                <div class="mini-card">
+                  <h3>Core capabilities</h3>
+                  <ul class="feature-list compact">
+                    <li>Single-pass graph stream summarisation</li>
+                    <li>Adaptive hashing and approximate representations</li>
+                    <li>Concept-drift aware graph learning</li>
+                    <li>Robustness, reliability, and interpretability</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pillar-grid">
+              <article class="pillar-card">
+                <h3>Single-pass processing</h3>
+                <p>
+                  Algorithms for evolving graph streams that update efficiently as edges, nodes, and attributes change,
+                  without revisiting full histories.
+                </p>
+              </article>
+              <article class="pillar-card">
+                <h3>Approximate representations</h3>
+                <p>
+                  Compact graph representations designed for bounded memory and computation while preserving structural
+                  fidelity and learning usefulness.
+                </p>
+              </article>
+              <article class="pillar-card">
+                <h3>Drift-adaptive learning</h3>
+                <p>
+                  Learning strategies that remain stable as graph topology, node behaviour, and temporal patterns shift
+                  over time.
+                </p>
+              </article>
+              <article class="pillar-card">
+                <h3>Trustworthy graph AI</h3>
+                <p>
+                  Lightweight mechanisms for uncertainty awareness, robustness, and interpretable decision support in
+                  streaming environments.
+                </p>
+              </article>
+            </div>
+
+            <div class="publication-panel">
+              <h3>Selected publications</h3>
+              <div class="publication-list">
+                <article class="publication-item">
+                  <h4>Hashing for Adaptive Real-Time Graph Stream Classification With Concept Drifts</h4>
+                  <p>IEEE Transactions on Cybernetics, 2017.</p>
+                </article>
+                <article class="publication-item">
+                  <h4>Hashing Techniques: A Survey and Taxonomy</h4>
+                  <p>ACM Computing Surveys, 2017.</p>
+                </article>
+                <article class="publication-item">
+                  <h4>Fast Graph Stream Classification using Discriminative Clique Hashing</h4>
+                  <p>PAKDD, 2013. Best Paper Award.</p>
+                </article>
+                <article class="publication-item">
+                  <h4>Nested Subtree Hash Kernels for Large-Scale Graph Classification over Streams</h4>
+                  <p>IEEE ICDM, 2012.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-section alt-surface">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Research Program 02</p>
+              <h2>AI Autism and Multimodal Neurodevelopmental Screening</h2>
+            </div>
+            <div class="detail-grid">
+              <div class="detail-copy">
+                <p>
+                  My AI Autism research focuses on earlier and more reliable autism screening by integrating behavioural
+                  and brain-based signals with modern representation learning. This program is motivated by the need for
+                  screening tools that are both technically strong and practically meaningful for healthcare settings.
+                </p>
+                <p>
+                  Recent work spans deep embedding methods for autism screening, multimodal neuroimaging frameworks for
+                  autism diagnosis, and a current multimodal AI agenda that brings together brain and behavioural signals
+                  for early screening. This program is also being developed through a close collaboration network that
+                  links autism-specific expertise, multimodal health AI, and community-facing translation.
+                </p>
+              </div>
+              <div class="detail-panel">
+                <div class="mini-card">
+                  <h3>Translation focus</h3>
+                  <ul class="feature-list compact">
+                    <li>Early screening rather than late retrospective analysis</li>
+                    <li>Multimodal fusion across behavioural and neuroimaging data</li>
+                    <li>Clinically useful representation learning</li>
+                    <li>Trustworthy and inclusive healthcare AI</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="pillar-grid">
+              <article class="pillar-card">
+                <h3>Behavioural screening AI</h3>
+                <p>
+                  Learning representations from screening data to better support autism identification in real-world
+                  assessment pathways.
+                </p>
+              </article>
+              <article class="pillar-card">
+                <h3>Multimodal neuroimaging</h3>
+                <p>
+                  Deep multimodal frameworks that combine multiple neuroimaging signals to improve autism diagnosis.
+                </p>
+              </article>
+              <article class="pillar-card">
+                <h3>Brain + behaviour integration</h3>
+                <p>
+                  New work on integrating brain signals and behavioural indicators to support earlier, richer, and more
+                  robust screening decisions.
+                </p>
+              </article>
+              <article class="pillar-card">
+                <h3>Healthcare AI translation</h3>
+                <p>
+                  Extending machine learning research into clinically meaningful, interpretable, and deployable health
+                  analytics systems.
+                </p>
+              </article>
+            </div>
+
+            <div class="publication-panel">
+              <h3>Selected publications and initiatives</h3>
+              <div class="publication-list">
+                <article class="publication-item">
+                  <h4>DeepMNF: Deep Multimodal Neuroimaging Framework for Diagnosing Autism Spectrum Disorder</h4>
+                  <p>Artificial Intelligence in Medicine, 2023.</p>
+                </article>
+                <article class="publication-item">
+                  <h4>Autism Screening Using Deep Embedding Representation</h4>
+                  <p>International Conference on Computational Science, 2019.</p>
+                </article>
+                <article class="publication-item">
+                  <h4>Transforming Early Autism Screening with Multimodal AI: Integrating Brain and Behavioural Signals</h4>
+                  <p>CSIRO Industry PhD project, 2026-2029.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="publication-panel network-panel">
+              <h3>Collaboration network for AI Autism</h3>
+              <div class="network-grid network-grid-inline">
+                <article class="network-card">
+                  <p class="network-role">Community Translation</p>
+                  <h3>Little Supermen</h3>
+                  <p>
+                    Community-facing collaboration that can support engagement, implementation awareness, and feedback
+                    from real-world child and family-oriented settings.
+                  </p>
+                  <a class="inline-link" href="https://littlesupermen.com/">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">Autism Identification and Diagnosis</p>
+                  <h3>OTARC</h3>
+                  <p>
+                    The Olga Tennison Autism Research Centre provides a strong autism-specific research environment with
+                    clear strengths in identification, diagnosis, and knowledge translation.
+                  </p>
+                  <a class="inline-link" href="https://www.latrobe.edu.au/otarc">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">Multimodal AI and Clinical Translation</p>
+                  <h3>AIM for Health Lab</h3>
+                  <p>
+                    The Monash AIM for Health Lab brings aligned expertise in multimodal AI, foundational models, and
+                    clinically oriented health AI research.
+                  </p>
+                  <a class="inline-link" href="https://www.monash.edu/it/aimh-lab">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">Medical Innovation and Health Research AI</p>
+                  <h3>ACAMI</h3>
+                  <p>
+                    The Australian Centre for Artificial Intelligence in Medical Innovation adds complementary strength
+                    in bespoke AI solutions for biomedical and health research, clinical research processes, and wider
+                    medical innovation pathways.
+                  </p>
+                  <a class="inline-link" href="https://www.latrobe.edu.au/research/acami">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">Broader AI + Medicine Capability</p>
+                  <h3>THETA Team</h3>
+                  <p>
+                    THETA Team extends the wider translational AI + medicine ecosystem around this work through
+                    cross-institutional biomedical AI collaboration.
+                  </p>
+                  <a class="inline-link" href="https://www.thetateam.net/index.html">Visit collaborator</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="detail-section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Broader Expertise</p>
+              <h2>Additional strengths across data mining and applied AI.</h2>
+            </div>
+
+            <div class="highlight-grid">
+              <article class="highlight-card">
+                <p class="highlight-kicker">Graph Anomaly Detection</p>
+                <h3>Self-supervised and contrastive graph anomaly learning</h3>
+                <p>
+                  Contributions to graph anomaly detection through self-supervised objectives, multi-scale contrastive
+                  learning, and dynamic graph analytics.
+                </p>
+              </article>
+              <article class="highlight-card">
+                <p class="highlight-kicker">Medical AI</p>
+                <h3>Healthcare machine learning beyond autism</h3>
+                <p>
+                  Work includes multimodal neuroimaging for Alzheimer’s disease and chest X-ray diagnosis, reflecting a
+                  broader capability in clinically oriented AI.
+                </p>
+              </article>
+              <article class="highlight-card">
+                <p class="highlight-kicker">Temporal and Spatial Data</p>
+                <h3>Time-series, event impact, and anomaly detection</h3>
+                <p>
+                  Research on temporal modelling, event-driven time series, and multivariate anomaly detection connects
+                  graph AI with broader dynamic data settings.
+                </p>
+              </article>
+              <article class="highlight-card">
+                <p class="highlight-kicker">Language and Social Media</p>
+                <h3>Geolocation prediction and social media mining</h3>
+                <p>
+                  Earlier work in natural language processing and social media analytics provides additional depth in
+                  representation learning and data mining.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="collab-section">
+          <div class="container collab-card">
+            <div>
+              <p class="eyebrow">Get in Touch</p>
+              <h2>Interested in collaboration, supervision, or translational research partnerships?</h2>
+              <p>
+                I welcome conversations around dynamic graph learning, healthcare AI, autism screening, scalable
+                anomaly detection, and interdisciplinary machine learning projects.
+              </p>
+            </div>
+            <div class="button-stack">
+              <a class="button button-primary" href="mailto:l.chi@latrobe.edu.au">Email</a>
+              <a class="button button-secondary" href="https://scholar.google.com/citations?user=5_J2eo8AAAAJ&hl=en">Google Scholar</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <p>Lianhua Chi | La Trobe University</p>
+          <p><a href="mailto:l.chi@latrobe.edu.au">l.chi@latrobe.edu.au</a></p>
+        </div>
+      </footer>
     </div>
-
-<div class="container">
-
-<h3>A Introduction of My PhD Research</h3>
-<div class="well">
-<p>
-My research focuses on <b><a href="https://opus.lib.uts.edu.au/bitstream/10453/36997/1/01front.pdf">making sense of big data with effective and agile data analytics, especially with hashing techniques</a></b>.
-In particular, I worked on graph stream classification and hashing technique innovation. I’ve built a data mining framework leveraging advanced hashing algorithms to efficiently process massive data without changing the nature of the data much. This research has provided state-of-the-art technologies in big data processing and has a strong impact on data utilisation for social and economic benefits.
-</p>
-<p>
-My main research interest is in making sense of big data with effective, agile and interactive data analytics, especially in Health care area. Currently, I am working on AI on Autism Screening.
-</p>
-</div>
-
-<h3>Hashing on Big Data Analysis</h3>
-<div class="well">
-<p>
-<ul>
-<li><a href="">Hashing for Adaptive Real-Time Graph Stream Classification With Concept Drifts</a>, Lianhua Chi, Bin Li, Xingquan Zhu, Shirui Pan and Ling Chen. In Journal of IEEE Transactions on Cybernetics, 2017.</li>
-<li><a href="http://dl.acm.org/citation.cfm?id=3047307">Hashing Techniques: A Survey and Taxonomy</a>, Lianhua Chi and Xingquan Zhu. In Journal of ACM Computing Survey, 2017.</li>
-<li><a href="https://opus.lib.uts.edu.au/handle/10453/36997">Hashing for large-scale structured data classification</a>, Lianhua Chi. Ph.D. Thesis, 2015.</li>
-<li><a href="http://epubs.siam.org/doi/abs/10.1137/1.9781611973440.12">Context-Preserving Hashing for Fast Text Classification</a>, Lianhua Chi, Bin Li and Xingquan Zhu. SDM, pp. 100--108, 2014.</li>
-<li><a href="http://link.springer.com/chapter/10.1007/978-3-642-37453-1_19">Fast graph stream classification using discriminative clique hashing</a>, Lianhua Chi, Bin Li and Xingquan Zhu. Pacific-Asia Conference on Knowledge Discovery and Data Mining, pp. 225--236, 2013.[<a href="http://pakdd2013.pakdd.org/award.html"><b><font color="red">Best long paper</font></b></a>]</li>
-<li><a href="http://dl.acm.org/citation.cfm?id=2505730">Graph hashing and factorization for fast graph stream classification</a>, Ting Guo, Lianhua Chi and Xingquan Zhu. Proceedings of the 22nd ACM international conference on Conference on information and knowledge management, pp. 1607--1612, 2013.</li>
-<li><a href="http://ieeexplore.ieee.org/document/6413884/">Nested subtree hash kernels for large-scale graph classification over streams</a>, Bin Li, Xingquan Zhu, Lianhua Chi and Chengqi Zhang. IEEE 12th International Conference on Data Mining, pp. 399--408, 2012</li>
-</ul>
-</p>
-</div>
-
-<h3>Geolocation Prediction in Social Media</h3>
-<div class="well">
-<p>
-<ul>
-<li><a href="">End-to-end Network for Twitter Geolocation Prediction and Hashing</a>, Jey Han Lau, Lianhua Chi, Khoi-Nguyen Tran and Trevor Cohn. In <a href="http://ijcnlp2017.org/site/page.aspx?pid=901&sid=1133&lang=en">the 8th International Joint Conference on Natural Language Processing (IJCNLP 2017).</a></li>
-<li><a href="">Geolocation Prediction in Twitter using Location Indicative Words and Textual Features</a>, Lianhua Chi, Kwan Hui Lim, Nebula Alam and Christopher J Butler. In the 2nd Workshop on Noisy User-generated Text (W-NUT), 2016.</li>
-<li><a href="http://www.aclweb.org/anthology/U/U16/U16-1015.pdf">Temporal Modelling of Geospatial Words in Twitter</a>, Bo Han, Antonio Jose Jimeno Yepes, Andrew MacKinlay and Lianhua Chi. In Australasian Language Technology Association Workshop, 2016, pp. 133.</li>
-</ul>
-</p>
-</div>
-
-<h3>Event Impact Analysis</h3>
-<div class="well">
-<p>
-<ul>
-<li><a href="">A Novel Method for Assessing Event Impacts on Event-Driven Time Series</a>, Lianhua Chi, Saket Sathe, Bo Han and Yun Wang. IEEE International Workshop on Data Mining for Service (DMS2016) in ICDM, 2016.</li>
-<li><a href="">Open Problem: Accurately Measuring Event Impacts on Time Series</a>, Lianhua Chi, Bo Han and Yun Wang. The 2nd SIGKDD Workshop on Mining and Learning from Time Series in KDD, 2016.</li>
-</ul>
-</p>
-</div>
-
-<h3>Time Series Analysis</h3>
-<div class="well">
-<p>
-<ul>
-<li><a href="http://link.springer.com/article/10.1631/jzus.C1100037">Comprehensive and efficient discovery of time series motifs</a>, Lianhua Chi, Hehua Chi, Yucai Feng, Shuliang Wang, Zhongsheng Cao. In Journal of Zhejiang University SCIENCE C 12(12), 1000--1009, Springer, 2011.</li>
-<li><a href="https://opus.lib.uts.edu.au/handle/10453/36997">QoM: An Effective Querying Method for Time Series Database</a>, Yucai Feng, Lianhua Chi, Hehua Chi, Chuanlu Liu and Zhuo Liu. Granular Computing (GrC), 2012 IEEE International Conference on, pp. 129--134, 2012.</li>
-<li><a href="http://epubs.siam.org/doi/abs/10.1137/1.9781611973440.12">Face Image Recognition based on Time Series Motif Discovery</a>, Lianhua Chi, Yucai Feng, Hehua Chi and Ying Huang. Granular Computing (GrC), 2012 IEEE International Conference on, pp. 72--77, 2012.</li>
-<li><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.222.3849&rep=rep1&type=pdf">Mining Time Series Data based Upon Cloud Model</a>, Hehua Chi, Jeubo Wu, Shuliang Wang, Lianhua Chi, Meng Fang. In The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Vol. 38, Part II, 2010.</li>
-</ul>
-</p>
-</div>
-
-<h3>Healthcare, Database Security and Face Recognition based on Cloud Model</h3>
-<div class="well">
-<p>
-<ul>
-<li><a href="">Improving Multi-Label Chest X-ray Disease Diagnosis by exploiting disease and health labels dependencies</a>. In the 4th International Symposium on Artificial Intelligence and Robotics, 2019.</li>
-<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-22741-8_12">Autism Screening Using Deep Embedding Representation</a>. In Proceedings of the International Conference on Computational Science 2019</li>
-<li><a href="">Machine Learning and Optimisation Techniques in Managing Operating Theatres</a>, Hamideh Anjomshoa, Olivia Smith and Lianhua Chi. In 28th European Conference on Operational Research, 2016.</li>
-<li><a href="http://www.asor-act.net/ASORConf/program/Proceedings%20DORS-ASOR%202016.pdf">Machine Learning to Predict Patient Demand for Surgeries</a>, Hamideh Anjomshoa and Lianhua Chi. In Proceedings of the 24th National Conference of the Australian Society for Operations Research, pp. 53, 2016.</li>
-<li><a href="http://www.inderscienceonline.com/doi/abs/10.1504/IJWGS.2016.076594">Efficient authorisation update on cloud data</a>, Zongmin Cui, Hong Zhu, Jie Shi, Lianhua Chi and Ke Yan. In International Journal of Web and Grid Services 12(2), 109--141, Inderscience Publishers (IEL), 2016.</li>
-<li><a href="http://onlinelibrary.wiley.com/doi/10.1002/sec.850/full">Lightweight Key Management on Sensitive Data in the Cloud</a>, Zongmin Cui, Hong Zhu and Lianhua Chi. In Security and communication networks 6(10), 1290--1299, Wiley Online Library, 2013.</li>
-<li><a href="http://ieeexplore.ieee.org/document/6808220/">Lightweight Management of Authorization Update on Cloud Data</a>, Zongmin Cui, Hong Zhu, Jie Shi, Lianhua Chi and Ke Yan. In Parallel and Distributed Systems (ICPADS), 2013 International Conference on, pp. 456--461, 2013.</li>
-<li><a href="">A Cloud Model-based Approach for Facial Expression Synthesis</a>, Juebo Wu, Hehua Chi and Lianhua Chi. In Journal of Multimedia 6(2), 217--224, 2011.</li>
-<li><a href="http://ieeexplore.ieee.org/document/5473397/">Facial Expression Synthesis based on Cloud Model</a>, Juebo Wu, Hehua Chi, Shuliang Wang and Lianhua Chi. In Intelligent Systems and Applications (ISA), 2010 2nd International Workshop on, pp. 1--4, 2010.</li>
-<li><a href="http://www.isprs.org/proceedings/Xxxviii/part2/Papers/158_Paper.pdf">Facial Expression Recognition based on Cloud Model</a>, Hehua Chi, Lianhua Chi, Meng Fang and Juebo Wu. In The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Vol. 38, Part II, 2010.</li>
-</ul>
-</p>
-</div>
-
-<!--
-<h3>Geolocation Prediction in Social Media</h3>
-<div class="well">
-<p>
-<ul>
- <li>
-<a href="http://jair.org/media/4200/live-4200-7781-jair.pdf">Text-based Twitter User Geolocation Prediction</a>, Bo Han, Paul Cook and Timothy Baldwin. In Journal of Artificial Intelligence Research, Volume 49, pages 451-500. <br>
-[<b><a href="https://www.dropbox.com/s/pqg72z82lb8981w/location_indicative_words.tgz?dl=0"><font color="gray">Ranked Location Indicative Words using various methods</font></a></b>] <br>
-[<b><a href="http://hum.csse.unimelb.edu.au:5000/"><font color="gray">Query Location Indicative Words by city name</font></a></b>] <br>
- </li>
- <li>
-<a href="http://ww2.cs.mu.oz.au/~hanb/acl2013.pdf">A Stacking-based Approach to Twitter User Geolocation Prediction</a>, Bo Han, Paul Cook and Timothy Baldwin. In ACL 2013, Demo Session, pages 7–12, Sofia, Bulgaria. <br>
-[<b><a href="http://hum.csse.unimelb.edu.au:9000/geo.html"><font color="gray">Live demo (old and only Chrome is supported)</font></a></b>] <br>
-[<b><a href="http://130.56.248.117:7000"><font color="gray">Live demo</font></a></b>] <br>
-[<b><a href="https://github.com/tq010or/acl2013"><font color="gray">Source code for live demo</font></a></b>] <br>
- </li>
- <li>
-<a href="http://aclweb.org/anthology/C/C12/C12-1064.pdf">Geolocation Prediction in Social Media Data by Finding Location Indicative Words</a>, Bo Han, Paul Cook and Timothy Baldwin. In COLING 2012, 1045–1062, Mumbai, India. <br>
-[<b><a href="https://www.dropbox.com/s/w6xnc7scza044lv/geo.tgz"><font color="gray">Data (only IDs are provided) </font></a></b>] <br>
-[<b><a href="http://ww2.cs.mu.oz.au/~hanb/coling2012.html"><font color="gray">Top-20 Location Indicative Words for top-500 cities across the world</font></a></b>] <br>
- </li>
-</ul>
-</p>
-</div>
--->
-
-
-</div>
-
   </body>
 </html>

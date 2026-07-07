@@ -1,140 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <basefont size="7">
     <meta charset="utf-8">
     <title>Lianhua Chi</title>
-
-
+    <meta
+      name="description"
+      content="Lianhua Chi is a Senior Lecturer at La Trobe University working on resource-efficient graph learning, dynamic graph streams, and AI for autism."
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
   </head>
-
-  <body>
-
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
+  <body class="page-home">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-row">
           <a class="brand" href="index.html">Lianhua Chi</a>
-
-          <ul class="nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="cv.pdf">C.V.</a></li>
-            </ul>
-
-          <div class="nav-collapse">
-          </div>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="research.html">Research</a>
+            <a href="cv.pdf">CV</a>
+            <a href="https://scholar.google.com/citations?user=5_J2eo8AAAAJ&hl=en">Google Scholar</a>
+          </nav>
         </div>
-      </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Machine Learning | Graph Mining | AI for Autism</p>
+              <h1>Building resource-efficient and trustworthy AI for dynamic graph streams and autism screening.</h1>
+              <p class="lead">
+                I am a Senior Lecturer in Computer Science at La Trobe University. My research combines graph
+                learning, data mining, anomaly-aware AI, and multimodal healthcare analytics to deliver methods
+                that are scalable, interpretable, and clinically meaningful.
+              </p>
+              <div class="button-row">
+                <a class="button button-primary" href="research.html">Explore Research</a>
+                <a class="button button-secondary" href="https://scholar.google.com/citations?user=5_J2eo8AAAAJ&hl=en">View Publications</a>
+                <a class="button button-secondary" href="mailto:l.chi@latrobe.edu.au">Contact</a>
+              </div>
+              <p class="micro-note">
+                Google Scholar profile accessed July 7, 2026: 2,063 citations, h-index 22, i10-index 34.
+              </p>
+            </div>
+
+            <aside class="profile-card">
+              <div class="profile-photo-frame">
+                <img src="lianhua.jpg" alt="Portrait of Lianhua Chi">
+              </div>
+              <div class="profile-card-copy">
+                <p class="profile-role">Senior Lecturer</p>
+                <p class="profile-org">Department of Computer Science and Information Technology</p>
+                <p class="profile-org">La Trobe University, Melbourne, Australia</p>
+                <div class="tag-row">
+                  <span class="tag">Graph Streams</span>
+                  <span class="tag">Approximate Learning</span>
+                  <span class="tag">AI Autism</span>
+                  <span class="tag">Trustworthy AI</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="metrics-section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Research Snapshot</p>
+              <h2>Impact, depth, and translational reach.</h2>
+            </div>
+            <div class="metrics-grid">
+              <article class="metric-card">
+                <p class="metric-value">2,063</p>
+                <p class="metric-label">Citations</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-value">22</p>
+                <p class="metric-label">h-index</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-value">70+</p>
+                <p class="metric-label">Peer-reviewed papers</p>
+              </article>
+              <article class="metric-card">
+                <p class="metric-value">2</p>
+                <p class="metric-label">Flagship research programs</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="programs-section" id="programs">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Flagship Programs</p>
+              <h2>Two interconnected research programs shape my current work.</h2>
+            </div>
+
+            <div class="program-grid">
+              <article class="program-card accent-graph">
+                <p class="program-label">Program 01</p>
+                <h3>Graph Stream Intelligence</h3>
+                <p>
+                  I develop algorithmic foundations for learning from fast-evolving graph streams under strict memory,
+                  computation, and latency constraints. This agenda advances a resource-constrained view of graph
+                  learning where approximation is not a compromise, but a principled design choice.
+                </p>
+                <ul class="feature-list">
+                  <li>Single-pass processing of dynamic graph streams</li>
+                  <li>Approximate graph representations under bounded memory</li>
+                  <li>Drift-adaptive learning under constrained computation</li>
+                  <li>Robust and interpretable graph stream learning</li>
+                </ul>
+              </article>
+
+              <article class="program-card accent-autism">
+                <p class="program-label">Program 02</p>
+                <h3>AI Autism and Neurodevelopmental Screening</h3>
+                <p>
+                  I build clinically relevant AI methods for early autism screening by integrating behavioural,
+                  neuroimaging, and multimodal signals. The focus is on representation learning that can support earlier,
+                  more reliable, and more inclusive screening pathways.
+                </p>
+                <ul class="feature-list">
+                  <li>Multimodal AI for early autism screening</li>
+                  <li>Deep neuroimaging models for autism diagnosis</li>
+                  <li>Behavioural and brain-signal integration</li>
+                  <li>Trustworthy medical AI for real-world translation</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="network-section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">AI Autism Collaboration Network</p>
+              <h2>A collaboration network spanning autism research, multimodal AI, community translation, and AI for medicine.</h2>
+            </div>
+
+            <div class="network-layout">
+              <article class="network-hub">
+                <p class="program-label">Central Hub</p>
+                <h3>AI Autism Research Program</h3>
+                <p>
+                  My AI Autism research is designed as a connected translational network. It brings together community
+                  engagement, autism identification and diagnosis expertise, multimodal clinical AI, and broader AI +
+                  medicine capability to support earlier and more meaningful autism screening.
+                </p>
+                <ul class="feature-list compact">
+                  <li>Early autism screening and diagnosis</li>
+                  <li>Brain and behavioural signal integration</li>
+                  <li>Multimodal AI and clinically grounded models</li>
+                  <li>Translation from algorithm design to real-world pathways</li>
+                </ul>
+              </article>
+
+              <div class="network-grid">
+                <article class="network-card">
+                  <p class="network-role">Community Translation</p>
+                  <h3>Little Supermen</h3>
+                  <p>
+                    Community-facing collaboration to support outreach, engagement, and real-world translation pathways
+                    around child-focused screening and support settings.
+                  </p>
+                  <a class="inline-link" href="https://littlesupermen.com/">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">Autism Research and Diagnosis</p>
+                  <h3>OTARC, La Trobe University</h3>
+                  <p>
+                    Partnership aligned with evidence-based autism identification, diagnosis, and knowledge translation,
+                    helping connect AI methods with autism-specific research and practice.
+                  </p>
+                  <a class="inline-link" href="https://www.latrobe.edu.au/otarc">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">Multimodal Clinical AI</p>
+                  <h3>AIM for Health Lab, Monash</h3>
+                  <p>
+                    Collaboration on multimodal AI, foundational models, and clinical AI translation to strengthen the
+                    modelling side of healthcare-focused autism research.
+                  </p>
+                  <a class="inline-link" href="https://www.monash.edu/it/aimh-lab">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">Medical Innovation AI</p>
+                  <h3>ACAMI, La Trobe University</h3>
+                  <p>
+                    Collaboration aligned with bespoke AI for biomedical and health research, helping extend autism AI
+                    work toward broader medical innovation and clinical research translation.
+                  </p>
+                  <a class="inline-link" href="https://www.latrobe.edu.au/research/acami">Visit collaborator</a>
+                </article>
+
+                <article class="network-card">
+                  <p class="network-role">AI + Medicine Ecosystem</p>
+                  <h3>THETA Team</h3>
+                  <p>
+                    A broader AI and biomedicine collaboration link that expands translational medical AI capability and
+                    cross-institutional research reach for clinically meaningful innovation.
+                  </p>
+                  <a class="inline-link" href="https://www.thetateam.net/index.html">Visit collaborator</a>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="highlights-section">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Selected Highlights</p>
+              <h2>Representative contributions across core research themes.</h2>
+            </div>
+
+            <div class="highlight-grid">
+              <article class="highlight-card">
+                <p class="highlight-kicker">Graph Streams</p>
+                <h3>Fast graph stream classification using discriminative clique hashing</h3>
+                <p>
+                  Introduced compact structural hashing for single-pass graph stream classification and received the Best
+                  Paper Award at PAKDD.
+                </p>
+              </article>
+
+              <article class="highlight-card">
+                <p class="highlight-kicker">Self-supervised Graph AI</p>
+                <h3>Generative and contrastive self-supervised learning for graph anomaly detection</h3>
+                <p>
+                  A highly cited contribution demonstrating how self-supervised objectives can support effective anomaly
+                  detection in complex graph data.
+                </p>
+              </article>
+
+              <article class="highlight-card">
+                <p class="highlight-kicker">Dynamic Graph Learning</p>
+                <h3>Correlation-aware spatial-temporal graph learning for multivariate time-series anomaly detection</h3>
+                <p>
+                  Extended graph learning to evolving, correlated, and partially observed systems through spatial-temporal
+                  modelling.
+                </p>
+              </article>
+
+              <article class="highlight-card">
+                <p class="highlight-kicker">AI Autism</p>
+                <h3>DeepMNF: Deep multimodal neuroimaging framework for diagnosing autism spectrum disorder</h3>
+                <p>
+                  Demonstrated how multimodal neuroimaging can support autism diagnosis and anchors my broader program
+                  on AI for neurodevelopmental screening.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="agenda-section">
+          <div class="container agenda-grid">
+            <div>
+              <p class="eyebrow">Current Research Agenda</p>
+              <h2>Resource-Constrained Approximate Learning for Dynamic Graph Streams</h2>
+              <p class="lead-small">
+                My current flagship agenda formalises approximate learning for dynamic graph streams under bounded
+                resources. It connects theory, algorithms, and trustworthy decision-making in a single research pipeline.
+              </p>
+            </div>
+
+            <div class="agenda-panel">
+              <div class="agenda-item">
+                <p class="agenda-step">Task 1</p>
+                <p>Single-pass graph stream processing under bounded memory and latency.</p>
+              </div>
+              <div class="agenda-item">
+                <p class="agenda-step">Task 2</p>
+                <p>Approximate graph representations under bounded memory and computation.</p>
+              </div>
+              <div class="agenda-item">
+                <p class="agenda-step">Task 3</p>
+                <p>Drift-adaptive graph learning under constrained computation.</p>
+              </div>
+              <div class="agenda-item">
+                <p class="agenda-step">Task 4</p>
+                <p>Robust and interpretable graph stream learning under bounded resources.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="collab-section">
+          <div class="container collab-card">
+            <div>
+              <p class="eyebrow">Collaboration</p>
+              <h2>My AI Autism work now sits within a named collaboration network across community, autism, multimodal AI, and medical AI partners.</h2>
+              <p>
+                Alongside longstanding collaborations in machine learning and healthcare AI, the autism research program
+                is being shaped through close work with Little Supermen, OTARC, the Monash AIM for Health Lab, ACAMI,
+                and THETA Team.
+              </p>
+            </div>
+            <div class="button-stack">
+              <a class="button button-primary" href="research.html">See Research Details</a>
+              <a class="button button-secondary" href="cv.pdf">Open CV</a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <p>Lianhua Chi | La Trobe University</p>
+          <p><a href="mailto:l.chi@latrobe.edu.au">l.chi@latrobe.edu.au</a></p>
+        </div>
+      </footer>
     </div>
-
-    <div class="container">
-
-
-<big>
-<div id="Content">
-<table width="100%">
-<tr>
-<td width="70%">
-<p>
-<h1>Lianhua Chi</h1>
-<a href="http://researcher.watson.ibm.com/researcher/view.php?person=au1-lianhuac">Senior Lecturer, La Trobe University, Melbourne, Australia</a><br>
-<i>Email: l.chi@latrobe.edu.au</i><br>
-<i>Address: La Trobe University, Bundoora VIC 3086, Australia</i><br>
-<a href="https://twitter.com/lianhua1221" class="twitter-follow-button" data-show-count="false">Follow @lianhua1221</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-<a href="https://au.linkedin.com/pub/lianhua-chi/55/771/98b">
-<img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160" height="33" border="0" alt="View Lianhua Chi's profile on LinkedIn">
-</a>
-</p>
-
-<br>
-<p>
-  I received my dual PhD degrees (Machine Learning and Data Mining) at the University of Technology Sydney in Australia and Huazhong University of Science and Technology in China in 2015.
-</p>
-<p>
-  I joined La Trobe after almost three years at IBM Research Australia where I was working as a Postdoc on Watson Education and Health.
-</p>
-
-<p>
-  Some of my received awards: "Best Paper Award in <a href="http://pakdd2013.pakdd.org/">PAKDD13</a>", "Top 200 Young Researchers Globally and Romberg Grant Award by <a href="http://www.heidelberg-laureate-forum.org/event_2016/">HLF16</a>", “Young Global Changer by <a href="https://registration.global-solutions.international/">G20/T20 Germany</a>”, "IBM External Honors", etc.
-</p>
-<p>
-  My main research interest is in making sense of big data with effective, agile and interactive data analytics, especially in Health area.
-</p>
-
-
-</td>
-<td>
-<p align="center"><img border="0" style="max-width:255px; max-height:255px;width:auto;height:auto;" src="lianhua.jpg"><br/>
-</td>
-</tr>
-<tr><td>
-</td><td height=50></td></tr>
-</table>
-
-<div class='well'>
-<b>Recent Activities:</b>
-<ul>
-<li>05/01/2026: A PhD scholarship opportunity ($48071 per annum, application deadline 01/02/2026) for the CSIRO Industry PhD project <a href="https://www.latrobe.edu.au/study/scholarships/other/transforming-early-autism-screening-with-multimodal-ai"> Transforming early autism screening with multimodal AI</a>.</li>
-<li>17/10/2025: I was invited to give a talk "How AI Transforms Autism Screening" to <a href="https://www.telstrahealth.com/"> Telstra Health</a>.</li>
-<li>13/09/2025: The successful award of <a href="https://www.csiro.au/en/careers/scholarships-student-opportunities/postgraduate-programs-and-scholarships/industry-phd">a CSIRO Industry PhD (iPhD) grant for the project “Transforming Early Autism Screening with Multimodal AI: Integrating Brain and Behavioural Signals” (2026-2029)</a> which will fund a fully supported PhD student, with additional industry top-up scholarship and project expense funds, totaling $255,497 across four years </li>
-<li>21/08/2025: I co-authored a journal paper with my PhD student <a href="https://www.sciencedirect.com/science/article/pii/S095070512501353X">Conem: A novel framework for integrating external factors with inner and outer correlations in time series forecasting</a> which has been published by <a href="https://www.sciencedirect.com/journal/knowledge-based-systems">Knowledge-Based Systems (IF 7.6)</a>.</li>
-<li>30/05/2019: I co-authored a conference paper <a href="">Improving Multi-Label Chest X-ray Disease Diagnosis by exploiting disease and health labels dependencies</a> which was accepted by <a href="https://isair.site/">The 4th International Symposium on Artificial Intelligence and Robotics 2019</a>.</li>
-<li>25/03/2019: I co-authored a conference paper <a href="">Autism Screening using Deep Embedding Representation</a> which was accepted by <a href="https://www.iccs-meeting.org/iccs2019/">INTERNATIONAL CONFERENCE ON COMPUTATIONAL SCIENCE</a>.</li>
-<li>14/01/2019: I was invited to give a seminar talk "Real-time Classification of Big Data Stream through Hashing Techniques" at <a href="http://cs.whu.edu.cn/news_show.aspx?id=1013"> School of Computer Science, Wuhan University</a>.</li>
-<li>22/10/2018: I was invited to give a keynote talk "Making sense of big data in healthcare with effective and interactive analysis" at <a href="https://www.hisa.org.au/healthdataanalytics/program/"> Health Data Analytics 2018</a>.</li>
-<li>01/06/2018: I started to visit <a href="http://gehlenborglab.org/team/members/lina-chi/">Gehlenborg Lab of Harvard Medical School in Boston</a> for 5 weeks.</li>
-<li>26/02/2018: I joined <a href="https://scholars.latrobe.edu.au/display/lchi">La Trobe University as a lecturer</a>.</li>
-<li>02/02/2018: I was invited to give a talk "Real-time Classification of Big Data Stream through Hashing Techniques" at <a href="https://www.uts.edu.au/research-and-teaching/our-research/centre-artificial-intelligence"> the Center of Artificial intelligence in University of Technology Sydney</a>.</li>
-<li>27/11/2017: I was invited to attend <a href="http://www.eastlakeforum-hust.org/backend/index.php?module=website&action=index">2017 East Lake International Forum for Outstanding Overseas Young Scholars</a>.</li>
-<li>19/11/2017: I was invited to join the Program Committee of <a href="http://ijcai-18.org/">IJCAI-ECAI-2018</a> (PIC Top-Quality conference in Artificial Intelligence).</li>
-<li>08/11/2017: I was invited to join the Program Committee of <a href="http://naacl2018.org/">NAACL-HLT 2018</a> (PIC Top-Quality conference in Natural Language Processing).</li>
-<li>01/09/2017: I participated in <a href="https://sites.google.com/site/rmitanalytics/">RMIT Analytics Competition</a> as judging panel.</li>
-<li>21-25/08/2017: I am attending the main conference <a href="http://ijcai-17.org/">IJCAI 2017</a> in Melbourne.</li>
-<li>19-20/08/2017: I co-organised the conference <a href="http://ausdm17.azurewebsites.net/">AusDM 2017</a>, which was co-located with IJCAI 2017 in Melbourne.</li>
-<li>26/07/2017: I got my third patent filed <a href="">SYBIL IDENTIFICATION MECHANISM FOR FRAUDULENT DOCUMENT DETECTION THROUGH A COGNITIVE BASED PERSONAL ENCRYPTION KEY.</a></li>
-<li>11/07/2017: I was awarded <a href="G20.jpg">the certificate of participation</a> from <a href="https://registration.global-solutions.international/">Think Summit GLOBAL SOLUTIONS.</a></li>
-<li>28/05/2017: I attended <a href="https://registration.global-solutions.international/">Think Summit GLOBAL SOLUTIONS as a Young Global Changer</a> in Berlin, Gemany.</li>
-<li>10/05/2017: I co-authored a journal paper <a href="">Hashing for Adaptive Real-Time Graph Stream Classification With Concept Drifts</a> which was accepted by <a href="http://www.ieeesmc.org/publications/transactions-on-cybernetics/">IEEE Transactions on Cybernetics</a>.</li>
-<li>27/04/2017: I was selected as one of 100 outstanding Young Global Changers to attend <a href="https://registration.global-solutions.international/">the Think 20 Summit – GLOBAL SOLUTIONS</a>.</li>
-<li>20/03/2017: I was invited as Program Chair for the Applications Track of <a href="http://ausdm17.azurewebsites.net/">AusDM 2017</a>.</li>
-<li>14/01/2017: I got my second patent filed <a href="">SYSTEM AND METHOD FOR UNSTRUCTURED METADATA CORRELATION.</a></li>
-<li>04/01/2017: I co-authored a paper <a href="">Hashing Techniques: A Survey and Taxonomy</a> which was accepted by <a href="http://csur.acm.org/">ACM Computing Surveys</a>.</li>
-<li>11/12/2016: I attended <a href="http://coling2016.anlp.jp/">COLING 2016</a> and presented the poster <a href="">Geolocation Prediction in Twitter Using Location Indicative Words and Textual Features</a> in the workshop <a href="http://noisy-text.github.io/2016/geo-shared-task.html#">W-NUT 2016</a> in Osaka, Japan.</li>
-<li>05/12/2016: I attended <a href="http://alta2016.alta.asn.au/index.html">ALTA 2016</a> and presented the short paper <a href="">Temporal Modelling of Geospatial Words in Twitter</a> in Monash university, Melbourne, Australia.</li>
-<li>12/11/2016: I was invited as a VIP guest to attend <a href="http://www.capsaus.org/?a=645BE4F3002C5C05">the 9th Research Symposium for Chinese PhD Students and Scholars in Australia</a>.</li>
-<li>24/10/2016: I co-authored a paper <a href="">Temporal Modelling of Geospatial Words in Twitter</a> in <a href="http://www.alta.asn.au/events/alta2016/">ALTA 2016</a>.</li>
-<li>23/09/2016: I co-authored a paper <a href="">A Novel Method for Assessing Event Impacts on Event-Driven Time Series</a> in <a href="http://icdm2016.eurecat.org/">ICDM 2016</a>.</li>
-<li>19/09/2016: I gave a talk <a href="">How Advanced Adaptive Hashing Evolved from Randomised Hashing</a> in the workshop on Randomised Algorithms in <a href="http://www.heidelberg-laureate-forum.org/event_2016/">HLF16</a>.</li>
-<li>18/09/2016: I attended <a href="http://www.heidelberg-laureate-forum.org/event_2016/">Heidelberg Laureate Forum 2016 (HLF16)</a> and co-organised a workshop on Randomised Algorithms in Heidelberg, Gemany.</li>
-<li>15/09/2016: I got my first patent filed <a href="">SYSTEM, METHOD AND COMPUTER PROGRAM FOR A COGNITIVE MEDIA STORY EXTRACTOR AND VIDEO COMPOSER.</a></li>
-<li>13/08/2016: I attended <a href="http://www.kdd.org/kdd2016/">KDD 2016</a> and presented our poster <a href="">Open Problem: Accurately Measuring Event Impacts on Time Series</a> in the workshop <a href="http://www-bcf.usc.edu/~liu32/milets16/">MiLeTS 2016</a> in San Francisco, CA, United States.</li>
-  <!--<li>12/11/2014: I had an invited talk at RMIT university on social media text processing.</li>
-<li>07/11/2014: I co-authored a paper on <a href="http://aclweb.org/anthology/U/U14/U14-1023.pdf">Identifying Location Mentions in Twitter</a> in ALTA 2014 shared task.</li>
-<li>06/11/2014: I am co-organising an ACL 2015 workshop on <a href="http://noisy-text.github.io/">Noisy User-generated Text (W-NUT)</a> with Wei Xu and Alan Ritter.</li>
-<li>17/04/2014: I am working on <a href="http://researcher.watson.ibm.com/researcher/view_group.php?id=5064">Australian Crisis Tracker</a> </li>-->
-</ul>
-</div>
-</big>
-<p>
-</div>
-</body>
+  </body>
 </html>
