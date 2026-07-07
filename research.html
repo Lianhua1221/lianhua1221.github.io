@@ -15,6 +15,7 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
   </head>
   <body class="page-research">
     <div class="page-shell">
@@ -34,16 +35,22 @@
         <section class="subpage-hero">
           <div class="container narrow">
             <p class="eyebrow">Research Programs</p>
-            <h1>Research that connects scalable graph learning with clinically meaningful AI.</h1>
+            <h1>Research connecting scalable graph learning with clinically meaningful AI.</h1>
             <p class="lead">
               My work sits at the intersection of machine learning, data mining, graph analytics, anomaly detection,
               approximate computation, and healthcare AI. The unifying theme is to design models that remain useful when
               data are dynamic, noisy, resource-constrained, and high stakes.
             </p>
+
+            <div class="section-pills" aria-label="Research sections">
+              <a class="section-pill" href="#graph-streams">Graph Streams</a>
+              <a class="section-pill" href="#ai-autism">AI Autism</a>
+              <a class="section-pill" href="#broader-expertise">Broader Expertise</a>
+            </div>
           </div>
         </section>
 
-        <section class="detail-section">
+        <section class="detail-section" id="graph-streams">
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Research Program 01</p>
@@ -73,6 +80,29 @@
                   </ul>
                 </div>
               </div>
+            </div>
+
+            <div class="task-grid">
+              <article class="task-card">
+                <p class="card-label">Task 1</p>
+                <h3>Single-pass processing</h3>
+                <p>Processing dynamic graph streams under bounded memory and latency while retaining learning-relevant structure.</p>
+              </article>
+              <article class="task-card">
+                <p class="card-label">Task 2</p>
+                <h3>Approximate representations</h3>
+                <p>Building compact graph representations that remain useful when full graph histories cannot be stored.</p>
+              </article>
+              <article class="task-card">
+                <p class="card-label">Task 3</p>
+                <h3>Drift-adaptive learning</h3>
+                <p>Designing graph learning algorithms that stay stable as graph structure and data distributions evolve.</p>
+              </article>
+              <article class="task-card">
+                <p class="card-label">Task 4</p>
+                <h3>Robust and interpretable AI</h3>
+                <p>Integrating reliability, uncertainty awareness, and interpretation into graph stream learning systems.</p>
+              </article>
             </div>
 
             <div class="pillar-grid">
@@ -130,7 +160,7 @@
           </div>
         </section>
 
-        <section class="detail-section alt-surface">
+        <section class="detail-section alt-surface" id="ai-autism">
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Research Program 02</p>
@@ -178,7 +208,7 @@
                 </p>
               </article>
               <article class="pillar-card">
-                <h3>Brain + behaviour integration</h3>
+                <h3>Brain and behaviour integration</h3>
                 <p>
                   New work on integrating brain signals and behavioural indicators to support earlier, richer, and more
                   robust screening decisions.
@@ -206,7 +236,7 @@
                 </article>
                 <article class="publication-item">
                   <h4>Transforming Early Autism Screening with Multimodal AI: Integrating Brain and Behavioural Signals</h4>
-                  <p>CSIRO Industry PhD project, 2026-2029.</p>
+                  <p>Current translation-oriented research agenda.</p>
                 </article>
               </div>
             </div>
@@ -256,10 +286,10 @@
                 </article>
 
                 <article class="network-card">
-                  <p class="network-role">Broader AI + Medicine Capability</p>
+                  <p class="network-role">Broader AI and Medicine Capability</p>
                   <h3>THETA Team</h3>
                   <p>
-                    THETA Team extends the wider translational AI + medicine ecosystem around this work through
+                    THETA Team extends the wider translational AI and medicine ecosystem around this work through
                     cross-institutional biomedical AI collaboration.
                   </p>
                   <a class="inline-link" href="https://www.thetateam.net/index.html">Visit collaborator</a>
@@ -269,7 +299,7 @@
           </div>
         </section>
 
-        <section class="detail-section">
+        <section class="detail-section" id="broader-expertise">
           <div class="container">
             <div class="section-heading">
               <p class="eyebrow">Broader Expertise</p>
@@ -278,7 +308,7 @@
 
             <div class="highlight-grid">
               <article class="highlight-card">
-                <p class="highlight-kicker">Graph Anomaly Detection</p>
+                <p class="card-label">Graph Anomaly Detection</p>
                 <h3>Self-supervised and contrastive graph anomaly learning</h3>
                 <p>
                   Contributions to graph anomaly detection through self-supervised objectives, multi-scale contrastive
@@ -286,15 +316,15 @@
                 </p>
               </article>
               <article class="highlight-card">
-                <p class="highlight-kicker">Medical AI</p>
+                <p class="card-label">Medical AI</p>
                 <h3>Healthcare machine learning beyond autism</h3>
                 <p>
-                  Work includes multimodal neuroimaging for Alzheimer’s disease and chest X-ray diagnosis, reflecting a
+                  Work includes multimodal neuroimaging for Alzheimer's disease and chest X-ray diagnosis, reflecting a
                   broader capability in clinically oriented AI.
                 </p>
               </article>
               <article class="highlight-card">
-                <p class="highlight-kicker">Temporal and Spatial Data</p>
+                <p class="card-label">Temporal and Spatial Data</p>
                 <h3>Time-series, event impact, and anomaly detection</h3>
                 <p>
                   Research on temporal modelling, event-driven time series, and multivariate anomaly detection connects
@@ -302,7 +332,7 @@
                 </p>
               </article>
               <article class="highlight-card">
-                <p class="highlight-kicker">Language and Social Media</p>
+                <p class="card-label">Language and Social Media</p>
                 <h3>Geolocation prediction and social media mining</h3>
                 <p>
                   Earlier work in natural language processing and social media analytics provides additional depth in
