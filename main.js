@@ -22,9 +22,15 @@ window.addEventListener("DOMContentLoaded", () => {
       });
 
       panels.forEach((panel) => {
-        panel.classList.toggle("is-active", panel.id === nextPanelId);
+        const isActive = panel.id === nextPanelId;
+        panel.classList.toggle("is-active", isActive);
+        panel.hidden = !isActive;
       });
     };
+
+    const initialTab =
+      tabs.find((tab) => tab.classList.contains("is-active") || tab.getAttribute("aria-selected") === "true") ??
+      tabs[0];
 
     tabs.forEach((tab, index) => {
       tab.addEventListener("click", () => {
@@ -52,5 +58,9 @@ window.addEventListener("DOMContentLoaded", () => {
         activateTab(tabs[targetIndex]);
       });
     });
+
+    if (initialTab) {
+      activateTab(initialTab);
+    }
   });
 });

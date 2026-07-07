@@ -31,9 +31,9 @@
         </div>
       </header>
 
-      <main>
-        <section class="hero">
-          <div class="container hero-grid">
+      <main class="compact-main">
+        <section class="hero compact-hero">
+          <div class="container landing-grid">
             <div class="hero-copy">
               <p class="eyebrow">Senior Lecturer | La Trobe University</p>
               <h1>Resource-efficient graph learning and multimodal AI for autism screening.</h1>
@@ -41,24 +41,18 @@
                 I develop machine learning methods for dynamic graph streams and clinically grounded AI, with an
                 emphasis on single-pass graph learning, bounded-resource approximation, and multimodal autism screening.
               </p>
-              <div class="hero-highlights">
-                <div class="hero-highlight">
-                  <p class="mini-label">Current Graph Stream Agenda</p>
-                  <p>Resource-constrained approximate learning for dynamic graph streams.</p>
-                </div>
-                <div class="hero-highlight">
-                  <p class="mini-label">Current Health AI Agenda</p>
-                  <p>AI Autism research integrating behavioural and brain-based signals for earlier screening.</p>
-                </div>
+              <div class="fact-cluster" aria-label="Research focus">
+                <span class="fact-chip">Graph Stream Intelligence</span>
+                <span class="fact-chip">AI Autism</span>
               </div>
               <div class="button-row">
-                <a class="button button-primary" href="research.html">Explore Research</a>
-                <a class="button button-secondary" href="https://scholar.google.com/citations?user=5_J2eo8AAAAJ&hl=en">View Publications</a>
-                <a class="button button-secondary" href="mailto:l.chi@latrobe.edu.au">Contact</a>
+                <a class="button button-primary" href="research.html">Research Dashboard</a>
+                <a class="button button-secondary" href="cv.pdf">CV</a>
+                <a class="button button-secondary" href="https://scholar.google.com/citations?user=5_J2eo8AAAAJ&hl=en">Google Scholar</a>
               </div>
             </div>
 
-            <aside class="profile-card">
+            <aside class="profile-card profile-card-compact">
               <div class="profile-photo-frame">
                 <img src="lianhua.jpg" alt="Portrait of Lianhua Chi">
               </div>
@@ -66,172 +60,209 @@
                 <p class="profile-role">Senior Lecturer</p>
                 <p class="profile-org">Department of Computer Science and Information Technology</p>
                 <p class="profile-org">La Trobe University, Melbourne, Australia</p>
-                <dl class="profile-facts">
-                  <div>
+                <dl class="identity-grid">
+                  <div class="identity-item">
                     <dt>Flagship themes</dt>
                     <dd>Graph Stream Intelligence and AI Autism</dd>
                   </div>
-                  <div>
+                  <div class="identity-item">
                     <dt>Methods</dt>
-                    <dd>Graph mining, anomaly-aware AI, hashing, multimodal representation learning</dd>
+                    <dd>Graph mining, anomaly-aware AI, hashing, and multimodal representation learning</dd>
                   </div>
                 </dl>
                 <div class="tag-row">
                   <span class="tag">Graph Streams</span>
-                  <span class="tag">Approximate Learning</span>
                   <span class="tag">AI Autism</span>
-                  <span class="tag">Trustworthy AI</span>
+                  <span class="tag">Healthcare AI</span>
                 </div>
               </div>
             </aside>
           </div>
         </section>
 
-        <section class="focus-section">
+        <section class="compact-board-section">
           <div class="container">
-            <div class="section-heading section-heading-compact">
-              <p class="eyebrow">Research Focus</p>
-              <h2>Three pillars shape the current research portfolio.</h2>
-            </div>
-
-            <div class="focus-grid">
-              <article class="focus-card focus-card-graph">
-                <p class="card-label">Graph Streams</p>
-                <h3>DECRA-aligned algorithmic program</h3>
-                <p>
-                  Developing principled algorithms for dynamic graph streams when memory, computation, and latency are
-                  part of the learning problem itself.
+            <div class="tabs-shell tabs-shell-compact" data-tabs>
+              <div class="tabs-intro">
+                <div>
+                  <p class="eyebrow">Research Switchboard</p>
+                  <h2>Open one topic at a time.</h2>
+                </div>
+                <p class="compact-note">
+                  The main content stays inside tab panels so the homepage remains compact and easy to scan.
                 </p>
-              </article>
+              </div>
 
-              <article class="focus-card focus-card-autism">
-                <p class="card-label">AI Autism</p>
-                <h3>Multimodal screening and translation</h3>
-                <p>
-                  Building AI methods that connect behavioural screening, neuroimaging, and clinically meaningful
-                  translation for earlier autism identification.
-                </p>
-              </article>
-
-              <article class="focus-card">
-                <p class="card-label">Collaboration Network</p>
-                <h3>Community, autism, and medical AI partners</h3>
-                <p>
-                  A structured partnership network spanning Little Supermen, OTARC, Monash AIM for Health Lab, ACAMI,
-                  and the THETA Team.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="tabs-section">
-          <div class="container">
-            <div class="section-heading">
-              <p class="eyebrow">Research Overview</p>
-              <h2>Explore the work by theme.</h2>
-              <p class="lead-small">
-                The homepage stays concise. Detailed program descriptions, selected publications, and broader expertise
-                are available on the Research page.
-              </p>
-            </div>
-
-            <div class="tabs-shell" data-tabs>
-              <div class="tab-list" role="tablist" aria-label="Research overview">
+              <div class="tab-list" role="tablist" aria-label="Homepage research switchboard">
                 <button
                   class="tab-button is-active"
-                  id="tab-graph"
+                  id="home-tab-overview"
                   type="button"
                   role="tab"
                   aria-selected="true"
-                  aria-controls="panel-graph"
-                  data-tab-target="panel-graph"
+                  aria-controls="home-panel-overview"
+                  data-tab-target="home-panel-overview"
                   tabindex="0"
+                >
+                  Overview
+                </button>
+                <button
+                  class="tab-button"
+                  id="home-tab-graph"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="home-panel-graph"
+                  data-tab-target="home-panel-graph"
+                  tabindex="-1"
                 >
                   Graph Streams
                 </button>
                 <button
                   class="tab-button"
-                  id="tab-autism"
+                  id="home-tab-autism"
                   type="button"
                   role="tab"
                   aria-selected="false"
-                  aria-controls="panel-autism"
-                  data-tab-target="panel-autism"
+                  aria-controls="home-panel-autism"
+                  data-tab-target="home-panel-autism"
                   tabindex="-1"
                 >
                   AI Autism
                 </button>
                 <button
                   class="tab-button"
-                  id="tab-network"
+                  id="home-tab-network"
                   type="button"
                   role="tab"
                   aria-selected="false"
-                  aria-controls="panel-network"
-                  data-tab-target="panel-network"
+                  aria-controls="home-panel-network"
+                  data-tab-target="home-panel-network"
                   tabindex="-1"
                 >
-                  Collaboration Network
+                  Network
                 </button>
               </div>
 
               <section
                 class="tab-panel is-active"
-                id="panel-graph"
+                id="home-panel-overview"
                 role="tabpanel"
-                aria-labelledby="tab-graph"
+                aria-labelledby="home-tab-overview"
               >
-                <div class="panel-layout">
-                  <div class="panel-copy">
-                    <p class="panel-intro">
-                      This program develops new methods for learning from fast-evolving graph streams under strict memory,
-                      computation, and latency constraints. The central idea is to place resource budgets at the centre of
-                      algorithm design rather than treating them as an afterthought.
-                    </p>
-                    <div class="panel-block">
-                      <h3>Research questions</h3>
-                      <ul class="feature-list compact">
-                        <li>How can dynamic graph streams be processed in a single pass under bounded memory and latency?</li>
-                        <li>Which compact graph representations preserve learning-relevant structure under bounded resources?</li>
-                        <li>How can graph learning stay adaptive under concept drift and constrained computation?</li>
-                        <li>How can graph stream learning remain robust, reliable, and interpretable in deployment?</li>
-                      </ul>
-                    </div>
-                    <div class="panel-block">
-                      <h3>Selected contributions</h3>
-                      <div class="publication-list compact-list">
-                        <article class="publication-item">
-                          <h4>Fast Graph Stream Classification using Discriminative Clique Hashing</h4>
-                          <p>PAKDD 2013. Best Paper Award.</p>
-                        </article>
-                        <article class="publication-item">
-                          <h4>Hashing for Adaptive Real-Time Graph Stream Classification With Concept Drifts</h4>
-                          <p>IEEE Transactions on Cybernetics, 2017.</p>
-                        </article>
-                        <article class="publication-item">
-                          <h4>Hashing Techniques: A Survey and Taxonomy</h4>
-                          <p>ACM Computing Surveys, 2017.</p>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
+                <div class="compact-panel-body">
+                  <div class="dashboard-grid">
+                    <article class="dashboard-card dashboard-card-wide">
+                      <p class="card-label">Current Portfolio</p>
+                      <h3>Two main programs organise the current research agenda.</h3>
+                      <p class="section-copy">
+                        My work currently centres on resource-constrained graph stream learning and AI Autism. Both
+                        programs are shaped by a common emphasis on scalable, interpretable, and practically meaningful AI.
+                      </p>
+                    </article>
 
-                  <div class="panel-side">
-                    <article class="mini-card">
-                      <h3>Methodological strengths</h3>
-                      <ul class="feature-list compact">
-                        <li>Single-pass stream summarisation</li>
-                        <li>Adaptive hashing and sketching</li>
-                        <li>Approximate graph representations</li>
-                        <li>Drift-aware and interpretable learning</li>
+                    <article class="dashboard-card">
+                      <p class="card-label">Graph Streams</p>
+                      <h3>DECRA-aligned algorithm design</h3>
+                      <ul class="key-list">
+                        <li>Single-pass processing under bounded memory and latency</li>
+                        <li>Approximate graph representations for evolving networks</li>
+                        <li>Drift-aware and interpretable graph learning</li>
                       </ul>
                     </article>
 
-                    <article class="mini-card">
-                      <h3>Why this matters</h3>
-                      <p>
-                        The agenda supports responsible and energy-efficient AI for evolving networks in areas such as
+                    <article class="dashboard-card">
+                      <p class="card-label">AI Autism</p>
+                      <h3>Multimodal screening and translation</h3>
+                      <ul class="key-list">
+                        <li>Behavioural and neuroimaging signal integration</li>
+                        <li>Representation learning for early autism screening</li>
+                        <li>Clinically grounded and translation-oriented AI</li>
+                      </ul>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">Research Strengths</p>
+                      <h3>Cross-cutting capabilities</h3>
+                      <ul class="key-list">
+                        <li>Graph mining and anomaly detection</li>
+                        <li>Hashing and efficient representation design</li>
+                        <li>Multimodal healthcare AI</li>
+                        <li>Trustworthy and explainable machine learning</li>
+                      </ul>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">How To Use This Site</p>
+                      <h3>Switch content without long scrolling</h3>
+                      <p class="section-copy">
+                        The homepage keeps the key themes in-place with buttons and tabs. The Research page provides a
+                        denser dashboard view with richer detail in the same compact format.
+                      </p>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
+              <section
+                class="tab-panel"
+                id="home-panel-graph"
+                role="tabpanel"
+                aria-labelledby="home-tab-graph"
+              >
+                <div class="compact-panel-body">
+                  <div class="dashboard-grid">
+                    <article class="dashboard-card dashboard-card-wide">
+                      <p class="card-label">Graph Stream Program</p>
+                      <h3>Resource-constrained approximate learning for dynamic graph streams.</h3>
+                      <p class="section-copy">
+                        This agenda develops principled algorithms for fast-evolving graph streams when memory,
+                        computation, and latency are part of the learning problem itself.
+                      </p>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">Four-Task Agenda</p>
+                      <ul class="key-list">
+                        <li>Single-pass graph stream processing</li>
+                        <li>Approximate graph representations</li>
+                        <li>Drift-adaptive learning</li>
+                        <li>Robust and interpretable graph AI</li>
+                      </ul>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">Core Methods</p>
+                      <ul class="key-list">
+                        <li>Adaptive hashing and sketching</li>
+                        <li>Compact graph summarisation</li>
+                        <li>Approximation-aware learning</li>
+                        <li>Efficiency and trust trade-off analysis</li>
+                      </ul>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">Selected Publications</p>
+                      <div class="card-stack">
+                        <div class="card-stack-item">
+                          <strong>Fast Graph Stream Classification using Discriminative Clique Hashing</strong>
+                          <p>PAKDD 2013. Best Paper Award.</p>
+                        </div>
+                        <div class="card-stack-item">
+                          <strong>Hashing for Adaptive Real-Time Graph Stream Classification With Concept Drifts</strong>
+                          <p>IEEE Transactions on Cybernetics, 2017.</p>
+                        </div>
+                        <div class="card-stack-item">
+                          <strong>Hashing Techniques: A Survey and Taxonomy</strong>
+                          <p>ACM Computing Surveys, 2017.</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">Application Reach</p>
+                      <p class="section-copy">
+                        The program supports real-time, lower-cost, and more trustworthy analysis of evolving networks in
                         communications, finance, healthcare, transport, and public services.
                       </p>
                     </article>
@@ -241,61 +272,56 @@
 
               <section
                 class="tab-panel"
-                id="panel-autism"
+                id="home-panel-autism"
                 role="tabpanel"
-                aria-labelledby="tab-autism"
+                aria-labelledby="home-tab-autism"
               >
-                <div class="panel-layout">
-                  <div class="panel-copy">
-                    <p class="panel-intro">
-                      My AI Autism research focuses on earlier and more reliable autism screening by integrating
-                      behavioural data, neuroimaging, and multimodal learning. The emphasis is on clinically meaningful
-                      models that can support real-world translation rather than isolated benchmark performance.
-                    </p>
-                    <div class="panel-block">
-                      <h3>Current directions</h3>
-                      <ul class="feature-list compact">
-                        <li>Behavioural screening AI and learned representations for autism identification</li>
-                        <li>Multimodal neuroimaging models for autism diagnosis</li>
-                        <li>Integration of brain-based and behavioural signals for early screening</li>
-                        <li>Trustworthy and inclusive healthcare AI for translational settings</li>
-                      </ul>
-                    </div>
-                    <div class="panel-block">
-                      <h3>Selected work</h3>
-                      <div class="publication-list compact-list">
-                        <article class="publication-item">
-                          <h4>DeepMNF: Deep Multimodal Neuroimaging Framework for Diagnosing Autism Spectrum Disorder</h4>
-                          <p>Artificial Intelligence in Medicine, 2023.</p>
-                        </article>
-                        <article class="publication-item">
-                          <h4>Autism Screening Using Deep Embedding Representation</h4>
-                          <p>International Conference on Computational Science, 2019.</p>
-                        </article>
-                        <article class="publication-item">
-                          <h4>Transforming Early Autism Screening with Multimodal AI</h4>
-                          <p>Current program integrating brain and behavioural signals for translation-focused screening.</p>
-                        </article>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="panel-side">
-                    <article class="mini-card">
-                      <h3>Translation pathway</h3>
-                      <p>
-                        This research is being shaped through collaborations across autism diagnosis expertise, multimodal
-                        clinical AI, community translation, and broader AI for medicine capability.
+                <div class="compact-panel-body">
+                  <div class="dashboard-grid">
+                    <article class="dashboard-card dashboard-card-wide">
+                      <p class="card-label">AI Autism Program</p>
+                      <h3>Multimodal AI for earlier and more reliable autism screening.</h3>
+                      <p class="section-copy">
+                        This program connects behavioural screening, neuroimaging, and healthcare AI translation to
+                        support clinically meaningful screening pathways.
                       </p>
                     </article>
 
-                    <article class="mini-card">
-                      <h3>Program emphasis</h3>
-                      <ul class="feature-list compact">
-                        <li>Early screening rather than late retrospective analysis</li>
+                    <article class="dashboard-card">
+                      <p class="card-label">Current Directions</p>
+                      <ul class="key-list">
+                        <li>Behavioural screening AI</li>
+                        <li>Multimodal neuroimaging models</li>
+                        <li>Brain and behaviour integration</li>
+                        <li>Trustworthy and inclusive health AI</li>
+                      </ul>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">Selected Work</p>
+                      <div class="card-stack">
+                        <div class="card-stack-item">
+                          <strong>DeepMNF</strong>
+                          <p>Artificial Intelligence in Medicine, 2023.</p>
+                        </div>
+                        <div class="card-stack-item">
+                          <strong>Autism Screening Using Deep Embedding Representation</strong>
+                          <p>International Conference on Computational Science, 2019.</p>
+                        </div>
+                        <div class="card-stack-item">
+                          <strong>Current multimodal AI agenda</strong>
+                          <p>Brain and behavioural signal integration for translation-focused screening.</p>
+                        </div>
+                      </div>
+                    </article>
+
+                    <article class="dashboard-card">
+                      <p class="card-label">Translation Emphasis</p>
+                      <ul class="key-list">
+                        <li>Early screening rather than retrospective analysis</li>
                         <li>Clinically grounded multimodal fusion</li>
-                        <li>Representation learning for real-world use</li>
-                        <li>Cross-disciplinary translation and deployment</li>
+                        <li>Real-world deployment and interpretation</li>
+                        <li>Cross-disciplinary collaboration</li>
                       </ul>
                     </article>
                   </div>
@@ -304,75 +330,62 @@
 
               <section
                 class="tab-panel"
-                id="panel-network"
+                id="home-panel-network"
                 role="tabpanel"
-                aria-labelledby="tab-network"
+                aria-labelledby="home-tab-network"
               >
-                <div class="network-panel-shell">
-                  <article class="network-hub">
-                    <p class="card-label">Central Program</p>
-                    <h3>AI Autism Research Network</h3>
-                    <p>
-                      The collaboration model connects autism-specific expertise, multimodal health AI, community-facing
-                      translation, and wider medical AI capability to support earlier and more meaningful screening.
-                    </p>
-                  </article>
-
-                  <div class="network-grid">
-                    <article class="network-card">
-                      <p class="network-role">Community Translation</p>
-                      <h3>Little Supermen</h3>
-                      <p>Community engagement and translation pathways for child-focused screening and support settings.</p>
-                      <a class="inline-link" href="https://littlesupermen.com/">Visit collaborator</a>
+                <div class="compact-panel-body">
+                  <div class="dashboard-grid">
+                    <article class="dashboard-card dashboard-card-wide">
+                      <p class="card-label">Collaboration Network</p>
+                      <h3>A structured translational network around AI Autism.</h3>
+                      <p class="section-copy">
+                        The collaboration model connects community translation, autism research and diagnosis, multimodal
+                        clinical AI, and broader AI for medicine capability.
+                      </p>
                     </article>
 
-                    <article class="network-card">
-                      <p class="network-role">Autism Research and Diagnosis</p>
-                      <h3>OTARC, La Trobe University</h3>
-                      <p>Autism identification, diagnosis, and knowledge translation aligned with evidence-based practice.</p>
-                      <a class="inline-link" href="https://www.latrobe.edu.au/otarc">Visit collaborator</a>
-                    </article>
+                    <article class="dashboard-card dashboard-card-wide">
+                      <div class="partner-grid">
+                        <article class="partner-card">
+                          <p class="network-role">Community Translation</p>
+                          <h4>Little Supermen</h4>
+                          <p>Child-focused community engagement and translation pathways.</p>
+                          <a class="inline-link" href="https://littlesupermen.com/">Visit collaborator</a>
+                        </article>
 
-                    <article class="network-card">
-                      <p class="network-role">Multimodal Clinical AI</p>
-                      <h3>AIM for Health Lab, Monash</h3>
-                      <p>Multimodal AI, foundational models, and clinical AI translation for healthcare research.</p>
-                      <a class="inline-link" href="https://www.monash.edu/it/aimh-lab">Visit collaborator</a>
-                    </article>
+                        <article class="partner-card">
+                          <p class="network-role">Autism Research and Diagnosis</p>
+                          <h4>OTARC</h4>
+                          <p>Evidence-based autism identification, diagnosis, and knowledge translation.</p>
+                          <a class="inline-link" href="https://www.latrobe.edu.au/otarc">Visit collaborator</a>
+                        </article>
 
-                    <article class="network-card">
-                      <p class="network-role">Medical Innovation AI</p>
-                      <h3>ACAMI, La Trobe University</h3>
-                      <p>Bespoke AI for biomedical and health research, extending autism AI toward wider medical innovation.</p>
-                      <a class="inline-link" href="https://www.latrobe.edu.au/research/acami">Visit collaborator</a>
-                    </article>
+                        <article class="partner-card">
+                          <p class="network-role">Multimodal Clinical AI</p>
+                          <h4>AIM for Health Lab</h4>
+                          <p>Multimodal AI and clinical translation expertise at Monash.</p>
+                          <a class="inline-link" href="https://www.monash.edu/it/aimh-lab">Visit collaborator</a>
+                        </article>
 
-                    <article class="network-card">
-                      <p class="network-role">AI and Medicine Ecosystem</p>
-                      <h3>THETA Team</h3>
-                      <p>Cross-institutional biomedical AI collaboration that expands translational reach and medical AI links.</p>
-                      <a class="inline-link" href="https://www.thetateam.net/index.html">Visit collaborator</a>
+                        <article class="partner-card">
+                          <p class="network-role">Medical Innovation AI</p>
+                          <h4>ACAMI</h4>
+                          <p>AI for biomedical and health research within wider medical innovation pathways.</p>
+                          <a class="inline-link" href="https://www.latrobe.edu.au/research/acami">Visit collaborator</a>
+                        </article>
+
+                        <article class="partner-card">
+                          <p class="network-role">AI and Medicine Ecosystem</p>
+                          <h4>THETA Team</h4>
+                          <p>Cross-institutional biomedical AI collaboration and translational reach.</p>
+                          <a class="inline-link" href="https://www.thetateam.net/index.html">Visit collaborator</a>
+                        </article>
+                      </div>
                     </article>
                   </div>
                 </div>
               </section>
-            </div>
-          </div>
-        </section>
-
-        <section class="collab-section">
-          <div class="container collab-card">
-            <div>
-              <p class="eyebrow">Further Details</p>
-              <h2>For full program detail, selected publications, and broader expertise, continue to the Research page.</h2>
-              <p>
-                The Research page expands the graph stream agenda, the AI Autism program, and related work in graph
-                anomaly detection, multimodal healthcare AI, and dynamic data mining.
-              </p>
-            </div>
-            <div class="button-stack">
-              <a class="button button-primary" href="research.html">Open Research Page</a>
-              <a class="button button-secondary" href="cv.pdf">Open CV</a>
             </div>
           </div>
         </section>
