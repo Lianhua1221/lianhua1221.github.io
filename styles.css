@@ -74,6 +74,11 @@ h4 {
   min-height: 100vh;
 }
 
+.page-home .page-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -89,6 +94,10 @@ h4 {
   justify-content: space-between;
   gap: 24px;
   min-height: 74px;
+}
+
+.page-home .nav-row {
+  min-height: 64px;
 }
 
 .brand {
@@ -126,8 +135,19 @@ h4 {
   padding: 26px 0 22px;
 }
 
+.page-home .compact-main {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 0 4px;
+}
+
 .compact-hero {
   padding: 8px 0 16px;
+}
+
+.page-home .compact-hero {
+  width: 100%;
+  padding: 0;
 }
 
 .landing-grid,
@@ -138,10 +158,22 @@ h4 {
   align-items: start;
 }
 
+.page-home .landing-grid {
+  grid-template-columns: minmax(0, 1.2fr) minmax(250px, 0.6fr);
+  gap: 18px;
+  align-items: start;
+}
+
 .hero-copy h1 {
   max-width: 13ch;
   font-size: clamp(2rem, 3.4vw, 2.95rem);
   margin-bottom: 14px;
+}
+
+.page-home .hero-copy h1 {
+  max-width: 10ch;
+  font-size: clamp(1.75rem, 2.8vw, 2.5rem);
+  margin-bottom: 10px;
 }
 
 .subpage-hero h1 {
@@ -155,6 +187,11 @@ h4 {
   color: var(--muted);
   font-size: 1.04rem;
   margin-bottom: 0;
+}
+
+.page-home .lead {
+  max-width: 54ch;
+  font-size: 0.98rem;
 }
 
 .eyebrow,
@@ -189,6 +226,10 @@ h4 {
   margin: 18px 0 20px;
 }
 
+.page-home .fact-cluster {
+  margin: 12px 0 14px;
+}
+
 .fact-chip,
 .tag {
   padding: 7px 11px;
@@ -205,6 +246,10 @@ h4 {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 2px;
+}
+
+.page-home .button-row {
+  gap: 8px;
 }
 
 .button {
@@ -252,11 +297,23 @@ h4 {
   padding: 16px;
 }
 
+.page-home .profile-card {
+  max-width: 270px;
+  justify-self: end;
+  padding: 10px;
+}
+
 .profile-photo-frame {
   margin-bottom: 14px;
   border-radius: 16px;
   overflow: hidden;
   background: #e5eaef;
+}
+
+.page-home .profile-photo-frame {
+  max-width: 164px;
+  margin: 0 auto 8px;
+  border-radius: 14px;
 }
 
 .profile-photo-frame img {
@@ -269,10 +326,22 @@ h4 {
   color: var(--muted);
 }
 
+.page-home .profile-role,
+.page-home .profile-org,
+.page-home .identity-item dd,
+.page-home .tag {
+  font-size: 0.92rem;
+}
+
 .identity-grid {
   display: grid;
   gap: 10px;
   margin: 16px 0 0;
+}
+
+.page-home .identity-grid {
+  gap: 6px;
+  margin-top: 8px;
 }
 
 .identity-item {
@@ -280,10 +349,19 @@ h4 {
   border-top: 1px solid var(--line);
 }
 
+.page-home .identity-item {
+  padding-top: 6px;
+}
+
 .identity-item dt {
   margin-bottom: 4px;
   font-size: 0.9rem;
   font-weight: 700;
+}
+
+.page-home .identity-item dt {
+  margin-bottom: 2px;
+  font-size: 0.84rem;
 }
 
 .identity-item dd {
@@ -293,6 +371,10 @@ h4 {
 
 .tag-row {
   margin-top: 14px;
+}
+
+.page-home .tag {
+  padding: 6px 10px;
 }
 
 .compact-board-section {
@@ -469,6 +551,10 @@ h4 {
   padding: 10px 0 24px;
 }
 
+.page-home .site-footer {
+  padding: 6px 0 14px;
+}
+
 .footer-row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -530,6 +616,15 @@ h4 {
     grid-template-columns: 1fr;
   }
 
+  .page-home .compact-main {
+    display: block;
+    padding: 20px 0 14px;
+  }
+
+  .page-home .compact-hero {
+    padding: 0;
+  }
+
   .dashboard-grid,
   .partner-grid,
   .footer-row {
@@ -578,6 +673,15 @@ h4 {
   .partner-grid,
   .footer-row {
     grid-template-columns: 1fr;
+  }
+
+  .page-home .profile-card {
+    max-width: none;
+    justify-self: stretch;
+  }
+
+  .page-home .profile-photo-frame {
+    max-width: 260px;
   }
 
   .tabs-shell {
