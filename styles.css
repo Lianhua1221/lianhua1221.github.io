@@ -97,7 +97,16 @@ h4 {
 }
 
 .page-home .nav-row {
-  min-height: 64px;
+  min-height: 54px;
+}
+
+.page-home .brand {
+  font-size: 1.42rem;
+}
+
+.page-home .site-nav a {
+  padding: 6px 10px;
+  font-size: 0.92rem;
 }
 
 .brand {
@@ -137,8 +146,8 @@ h4 {
 
 .page-home .compact-main {
   display: flex;
-  align-items: flex-start;
-  padding: 12px 0 4px;
+  align-items: center;
+  padding: 4px 0 0;
 }
 
 .compact-hero {
@@ -159,9 +168,19 @@ h4 {
 }
 
 .page-home .landing-grid {
-  grid-template-columns: minmax(0, 1.2fr) minmax(250px, 0.6fr);
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1.42fr) minmax(198px, 0.45fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.page-home .hero-copy {
+  max-width: 700px;
+  padding-right: 4px;
+}
+
+.page-home .eyebrow {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
 }
 
 .hero-copy h1 {
@@ -171,9 +190,9 @@ h4 {
 }
 
 .page-home .hero-copy h1 {
-  max-width: 10ch;
-  font-size: clamp(1.75rem, 2.8vw, 2.5rem);
-  margin-bottom: 10px;
+  max-width: 12ch;
+  font-size: clamp(1.82rem, 2.75vw, 2.5rem);
+  margin-bottom: 8px;
 }
 
 .subpage-hero h1 {
@@ -190,8 +209,9 @@ h4 {
 }
 
 .page-home .lead {
-  max-width: 54ch;
-  font-size: 0.98rem;
+  max-width: 58ch;
+  font-size: 1rem;
+  line-height: 1.56;
 }
 
 .eyebrow,
@@ -228,6 +248,7 @@ h4 {
 
 .page-home .fact-cluster {
   margin: 12px 0 14px;
+  gap: 8px;
 }
 
 .fact-chip,
@@ -250,6 +271,7 @@ h4 {
 
 .page-home .button-row {
   gap: 8px;
+  margin-top: 4px;
 }
 
 .button {
@@ -261,8 +283,15 @@ h4 {
   border: 1px solid var(--line);
   border-radius: 999px;
   font-weight: 600;
+  line-height: 1.1;
   text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.page-home .button {
+  min-height: 42px;
+  padding: 0 16px;
+  font-size: 0.95rem;
 }
 
 .button-primary {
@@ -298,9 +327,9 @@ h4 {
 }
 
 .page-home .profile-card {
-  max-width: 270px;
+  max-width: 234px;
   justify-self: end;
-  padding: 10px;
+  padding: 8px;
 }
 
 .profile-photo-frame {
@@ -311,14 +340,18 @@ h4 {
 }
 
 .page-home .profile-photo-frame {
-  max-width: 164px;
-  margin: 0 auto 8px;
+  max-width: 132px;
+  margin: 0 auto 5px;
   border-radius: 14px;
 }
 
 .profile-photo-frame img {
   width: 100%;
   height: auto;
+}
+
+.page-home .profile-card-copy {
+  line-height: 1.42;
 }
 
 .profile-org {
@@ -330,7 +363,12 @@ h4 {
 .page-home .profile-org,
 .page-home .identity-item dd,
 .page-home .tag {
-  font-size: 0.92rem;
+  font-size: 0.88rem;
+}
+
+.page-home .profile-org {
+  margin-bottom: 2px;
+  line-height: 1.35;
 }
 
 .identity-grid {
@@ -341,7 +379,7 @@ h4 {
 
 .page-home .identity-grid {
   gap: 6px;
-  margin-top: 8px;
+  margin-top: 5px;
 }
 
 .identity-item {
@@ -350,7 +388,7 @@ h4 {
 }
 
 .page-home .identity-item {
-  padding-top: 6px;
+  padding-top: 5px;
 }
 
 .identity-item dt {
@@ -361,7 +399,7 @@ h4 {
 
 .page-home .identity-item dt {
   margin-bottom: 2px;
-  font-size: 0.84rem;
+  font-size: 0.8rem;
 }
 
 .identity-item dd {
@@ -369,12 +407,27 @@ h4 {
   color: var(--muted);
 }
 
+.page-home .identity-item dd {
+  line-height: 1.42;
+}
+
 .tag-row {
   margin-top: 14px;
 }
 
+.page-home .tag-row {
+  margin-top: 10px;
+  gap: 6px;
+}
+
 .page-home .tag {
-  padding: 6px 10px;
+  padding: 5px 9px;
+}
+
+.page-home .fact-chip,
+.page-home .tag {
+  padding: 5px 9px;
+  font-size: 0.8rem;
 }
 
 .compact-board-section {
@@ -552,7 +605,14 @@ h4 {
 }
 
 .page-home .site-footer {
-  padding: 6px 0 14px;
+  padding: 0 0 6px;
+}
+
+.page-home .footer-row {
+  gap: 10px;
+  padding-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
 
 .footer-row {
