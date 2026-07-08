@@ -33,6 +33,10 @@ body {
   line-height: 1.68;
 }
 
+.page-home {
+  --container: min(1220px, calc(100vw - 24px));
+}
+
 a {
   color: inherit;
 }
@@ -168,18 +172,19 @@ h4 {
 }
 
 .page-home .landing-grid {
-  grid-template-columns: minmax(0, 1.42fr) minmax(198px, 0.45fr);
-  gap: 10px;
+  grid-template-columns: minmax(0, 808px) 278px;
+  justify-content: center;
+  gap: 0;
   align-items: center;
 }
 
 .page-home .hero-copy {
-  max-width: 700px;
-  padding-right: 4px;
+  max-width: 808px;
+  padding-right: 0;
 }
 
 .page-home .eyebrow {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   margin-bottom: 10px;
 }
 
@@ -191,7 +196,7 @@ h4 {
 
 .page-home .hero-copy h1 {
   max-width: 12ch;
-  font-size: clamp(1.82rem, 2.75vw, 2.5rem);
+  font-size: clamp(2.18rem, 3.2vw, 2.96rem);
   margin-bottom: 8px;
 }
 
@@ -210,8 +215,8 @@ h4 {
 
 .page-home .lead {
   max-width: 58ch;
-  font-size: 1rem;
-  line-height: 1.56;
+  font-size: 1.11rem;
+  line-height: 1.6;
 }
 
 .eyebrow,
@@ -271,7 +276,7 @@ h4 {
 
 .page-home .button-row {
   gap: 8px;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .button {
@@ -289,9 +294,9 @@ h4 {
 }
 
 .page-home .button {
-  min-height: 42px;
-  padding: 0 16px;
-  font-size: 0.95rem;
+  min-height: 46px;
+  padding: 0 19px;
+  font-size: 1.04rem;
 }
 
 .button-primary {
@@ -327,9 +332,11 @@ h4 {
 }
 
 .page-home .profile-card {
-  max-width: 234px;
-  justify-self: end;
-  padding: 8px;
+  width: min(100%, 282px);
+  max-width: 282px;
+  justify-self: start;
+  margin-left: -16px;
+  padding: 13px;
 }
 
 .profile-photo-frame {
@@ -340,8 +347,8 @@ h4 {
 }
 
 .page-home .profile-photo-frame {
-  max-width: 132px;
-  margin: 0 auto 5px;
+  max-width: 172px;
+  margin: 0 auto 10px;
   border-radius: 14px;
 }
 
@@ -363,7 +370,7 @@ h4 {
 .page-home .profile-org,
 .page-home .identity-item dd,
 .page-home .tag {
-  font-size: 0.88rem;
+  font-size: 0.98rem;
 }
 
 .page-home .profile-org {
@@ -399,7 +406,7 @@ h4 {
 
 .page-home .identity-item dt {
   margin-bottom: 2px;
-  font-size: 0.8rem;
+  font-size: 0.87rem;
 }
 
 .identity-item dd {
@@ -426,8 +433,8 @@ h4 {
 
 .page-home .fact-chip,
 .page-home .tag {
-  padding: 5px 9px;
-  font-size: 0.8rem;
+  padding: 6px 11px;
+  font-size: 0.88rem;
 }
 
 .compact-board-section {
