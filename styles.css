@@ -34,7 +34,7 @@ body {
 }
 
 .page-home {
-  --container: min(1220px, calc(100vw - 24px));
+  --container: min(1250px, calc(100vw - 18px));
 }
 
 a {
@@ -172,19 +172,19 @@ h4 {
 }
 
 .page-home .landing-grid {
-  grid-template-columns: minmax(0, 808px) 278px;
+  grid-template-columns: minmax(0, 844px) 304px;
   justify-content: center;
   gap: 0;
   align-items: center;
 }
 
 .page-home .hero-copy {
-  max-width: 808px;
+  max-width: 844px;
   padding-right: 0;
 }
 
 .page-home .eyebrow {
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   margin-bottom: 10px;
 }
 
@@ -196,7 +196,7 @@ h4 {
 
 .page-home .hero-copy h1 {
   max-width: 12ch;
-  font-size: clamp(2.18rem, 3.2vw, 2.96rem);
+  font-size: clamp(2.38rem, 3.42vw, 3.18rem);
   margin-bottom: 8px;
 }
 
@@ -215,8 +215,8 @@ h4 {
 
 .page-home .lead {
   max-width: 58ch;
-  font-size: 1.11rem;
-  line-height: 1.6;
+  font-size: 1.18rem;
+  line-height: 1.64;
 }
 
 .eyebrow,
@@ -294,9 +294,9 @@ h4 {
 }
 
 .page-home .button {
-  min-height: 46px;
-  padding: 0 19px;
-  font-size: 1.04rem;
+  min-height: 48px;
+  padding: 0 21px;
+  font-size: 1.08rem;
 }
 
 .button-primary {
@@ -332,11 +332,11 @@ h4 {
 }
 
 .page-home .profile-card {
-  width: min(100%, 282px);
-  max-width: 282px;
+  width: min(100%, 304px);
+  max-width: 304px;
   justify-self: start;
-  margin-left: -16px;
-  padding: 13px;
+  margin-left: -28px;
+  padding: 15px;
 }
 
 .profile-photo-frame {
@@ -347,8 +347,8 @@ h4 {
 }
 
 .page-home .profile-photo-frame {
-  max-width: 172px;
-  margin: 0 auto 10px;
+  max-width: 188px;
+  margin: 0 auto 12px;
   border-radius: 14px;
 }
 
@@ -370,7 +370,7 @@ h4 {
 .page-home .profile-org,
 .page-home .identity-item dd,
 .page-home .tag {
-  font-size: 0.98rem;
+  font-size: 1.02rem;
 }
 
 .page-home .profile-org {
@@ -406,7 +406,7 @@ h4 {
 
 .page-home .identity-item dt {
   margin-bottom: 2px;
-  font-size: 0.87rem;
+  font-size: 0.91rem;
 }
 
 .identity-item dd {
@@ -433,8 +433,8 @@ h4 {
 
 .page-home .fact-chip,
 .page-home .tag {
-  padding: 6px 11px;
-  font-size: 0.88rem;
+  padding: 6px 12px;
+  font-size: 0.92rem;
 }
 
 .compact-board-section {
